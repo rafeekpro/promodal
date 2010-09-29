@@ -2,7 +2,7 @@
 <p>Pulsa para ver el ejemplo</p>
 
 <%= link_to "Hola Mundo", {:action => "modalwindow1"}, :remote => true %>
-<br><br><br>
+<br><hr><br>
 <%= form_tag({:action => "modalwindow2" }, :remote => true) do -%>
   	<%= field_set_tag 'Texto para ver' do %>
    		<p>
@@ -14,4 +14,8 @@
     	<%= submit_tag 'Ver resultado' %>
     </div>
 <% end -%>
- 
+<br><hr><br>
+<%= link_to "Ver formulario", {:action => "modalwindow3"}, :remote => true %>
+<div id="texto_escrito">
+	-
+</div>

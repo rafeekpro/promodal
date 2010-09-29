@@ -1,0 +1,12 @@
+<h2>Formulario</h2>
+<%= form_tag({:action => "datamodal3" }, :remote => true, :method => :post) do -%>
+  	<%= field_set_tag 'Texto para ver' do %>
+   		<p>
+   		<%= text_field_tag 'texto2m' %>
+   		</p>
+	<% end %>
+<br><br>
+    <div>
+    	<%= submit_tag 'Enviar datos' %>
+    </div>
+<% end -%>
