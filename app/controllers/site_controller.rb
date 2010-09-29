@@ -9,7 +9,19 @@ class SiteController < ApplicationController
    	 format.html
    	 format.js { render_to_facebox }
 	end
-
   end
+
+  def modalwindow2
+  	if params[:texto2m].nil? or params[:texto2m].empty?
+	    @texto2m = "NADA"
+	  else
+	    @texto2m = params[:texto2m]
+	  end
+    respond_to do |format|
+   	  format.html
+   	  format.js { render_to_facebox }
+	  end
+  end
+
 
 end

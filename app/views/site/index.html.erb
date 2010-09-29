@@ -1,4 +1,17 @@
-<h1>Site#index</h1>
-<p>Find me in app/views/site/index.html.erb</p>
+<h1>Ejemplos de ventanas modales</h1>
+<p>Pulsa para ver el ejemplo</p>
 
-<%= link_to "Modal1", {:action => "modalwindow1"}, :remote => true %>
+<%= link_to "Hola Mundo", {:action => "modalwindow1"}, :remote => true %>
+<br><br><br>
+<%= form_tag({:action => "modalwindow2" }, :remote => true) do -%>
+  	<%= field_set_tag 'Texto para ver' do %>
+   		<p>
+   		<%= text_field_tag 'texto2m' %>
+   		</p>
+	<% end %>
+
+    <div>
+    	<%= submit_tag 'Ver resultado' %>
+    </div>
+<% end -%>
+ 
