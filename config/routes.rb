@@ -1,5 +1,5 @@
 Modal1::Application.routes.draw do
-  get "site/index"
+  #get "site/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
